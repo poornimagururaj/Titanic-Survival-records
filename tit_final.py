@@ -2,7 +2,7 @@
 """
 Created on Fri Feb 15 14:59:40 2019
 
-@author: DELL
+@author: Poornima
 """
 
 import numpy as np
@@ -66,7 +66,7 @@ print(acc_log)
 #predict
 
 from sklearn.neighbors import KNeighborsClassifier
-classifier = KNeighborsClassifier(n_neighbors=1, p=2, metric='minkowski')
+classifier = KNeighborsClassifier(n_neighbors=5, p=2, metric='minkowski')
 classifier.fit(X_train,y_train)
 
 y_predk = classifier.predict(X_test)
